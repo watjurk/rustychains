@@ -1,0 +1,6 @@
+{
+  "rust-analyzer.linkedProjects": [
+    "./rustychains_dylib/Cargo.toml",
+    "./Cargo.toml"
+  ]
+}

@@ -1,0 +1,24 @@
+[package]
+name = "rustychains"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+lto = true
+
+[workspace]
+members = ["rustychains_shared"]
+
+# For explanation see build.rs
+exclude = ["rustychains_dylib"]
+
+[dependencies]
+chrono = "0.4.26"
+clap = "4.3.19"
+inquire = "0.6.2"
+interprocess = "1.2.1"
+
+flexbuffers = "2.0.0"
+bincode = "1.3.3"
+
+rustychains_shared = { path = "./rustychains_shared" }
